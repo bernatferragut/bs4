@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    font-size: 1.23em;
+    letter-spacing: 1em;
+}
