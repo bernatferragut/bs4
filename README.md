@@ -1,11 +1,5 @@
-# bs4
-bs4 + css3 + js => goes minimal
+# HTML5 + TYPESCRIPT + CANVAS
 
-We set up a local environment similar to the Codepen Online for fast protoryping
+> Drawing in HTML5 with the canvas tag with Typescript OOP
 
-1. Going minimal with a CDN =>  Outsourcing the location of files instead of having them locally
-2. No Task Runner =>  We work only CSS (no SASS and others)
-3. No Automatic Hot Reload => 
-4. Manual Hot Reload => SHIFT + CMD + R on Mac ;)
-
-> Easy and fast so we can focus on HTML + CSS + Javascript instead of putting a wall of tooling between us.
+A Play demonstration of how we can use OOP TSc programming to draw objects and create game and animatins on Canvas.
