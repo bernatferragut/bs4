@@ -1,0 +1,27 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.navbar {
+    background-color:black;
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+button {
+    background-color: black;
+    color: paleturquoise;
+    font-size: 1em;
+    letter-spacing: .5em;
+}
