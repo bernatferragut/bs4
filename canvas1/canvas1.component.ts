@@ -1,0 +1,46 @@
+import { element } from 'protractor';
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core';
+import { routerTransition } from './../animations';
+
+@Component({
+  selector: 'app-canvas1',
+  templateUrl: './canvas1.component.html',
+  styleUrls: ['./canvas1.component.css'],
+  animations: [routerTransition],
+  host: {'[@routerTransition]': ''}
+})
+export class Canvas1Component implements OnInit, OnDestroy {
+  @ViewChild('myCanvas') canvasRef: ElementRef;
+
+  private running: boolean;
+
+  ngOnInit() {
+    // Paint current framme
+    this.running = true;
+    this.paint();
+    const ctx: CanvasRenderingContext2D = this.canvasRef.nativeElement.getContext('2d');
+    // Draw background (which also effectively clears any previous drawing)
+    ctx.fillStyle = 'black';
+    ctx.fillRect(0, 0, 800, 600);
+    // drawing a circle
+    // ctx.save();
+    ctx.beginPath();
+    ctx.strokeStyle = 'lightblue';
+    ctx.lineWidth = 3;
+    ctx.arc(400, 400, 200, 0, 2 * Math.PI);
+    ctx.arc(400, 400, 3, 0, 2 * Math.PI);
+    ctx.stroke();
+   // ctx.restore();
+  }
+
+  ngOnDestroy() {
+    this.running = false;
+  }
+
+  private paint() {
+  // Check that we're still running.
+  if (!this.running) {
+    return;
+    }
+  }
+}
