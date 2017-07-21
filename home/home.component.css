@@ -3,6 +3,11 @@
     align-items: center;
     justify-content: center;
     color: orangered;
-    font-size: 1.23em;
+    font-size.btn1 {
+    color: orangered;
+    font-size: 1em;
+    letter-spacing: .5em;
+}: 1.23em;
     letter-spacing: 1em;
+    padding: 20px 0 0 0;
 }

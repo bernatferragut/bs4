@@ -1,8 +1,15 @@
 <!-- CANVAS -->
 <div class="container">
   <div>
-    <canvas #myCanvas width="800" height="600">
-    </canvas>
+    <canvas #myCanvas width="800" height="400"></canvas>
+  </div>
+  <div class="btn1">  
+    <button md-button 
+    class="btn1"
+    (click)="toggleAnim()">
+    {{ activated ? 'STOP' : 'PLAY' }}</button>
   </div>
 </div>
+
+
 
